@@ -1,0 +1,36 @@
+.body {
+    background-color: rgb(241, 183, 36);
+}
+
+.header {
+    height: 60px;
+    background-color: rgb(255, 196, 0);
+}
+
+.navTextColor {
+    /* Цвет текста в нав. меню*/
+    color: red;
+}
+
+#logoText {
+    font-family: 'Smokum', cursive;
+}
+
+.navLinkColorHover:hover {
+    /* Цвет ссылок при наведении в нав. меню*/
+    color: darkorange;
+}
+
+.foot {
+    height: 140px;
+    background-color: darkorange;
+}
+
+.noMarker {
+    /* Убирает маркеры у элементов списка */
+    list-style-type: none;
+}
+.hov:hover{
+    cursor: pointer;
+    opacity: .9;
+}
