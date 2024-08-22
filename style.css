@@ -1,0 +1,154 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(to top right, blueviolet, cornflowerblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+.homeIcon{
+    position: absolute;
+    color: #f1f1f1;
+    cursor: pointer;
+    top: 5%;
+    right: 5%;
+    transition: transform 0.2s;
+}
+.homeIcon:hover{
+    transform: scale(1.2);
+}
+.scoreP{
+    color: #f1f1f1; 
+    font-size: 3rem; 
+    height: 10vh;
+}
+.btnsDiv{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.divRow{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainButton{
+    display: block;
+    border: none;
+    height: 70px;
+    width: 10%;
+    border-radius: 6px;
+    font-size: 2rem;
+    margin: 1%;
+    box-shadow: 5px 5px 5px rgb(158, 158, 158), 2px 2px 5px rgb(158, 158, 158);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: cell;
+    color: cornflowerblue;
+    outline: none;
+    background: #f1f1f1;
+}
+
+.mainButton:hover{
+    background: none;
+    box-shadow: none;
+    color: rgb(158, 158, 158);
+    text-shadow: 0 0 5px rgb(158, 158, 158);
+}
+
+
+/* setting bnts */
+.settingBtnsDiv{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonTools{
+    border: none;
+    height: 50px;
+    width: 150px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    color: black;
+    background: #f1f1f1;
+    outline: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonTools:hover{
+    background-color: rgb(158, 158, 158);
+}
+
+.nextBtnHovered{
+    border: none;
+    height: 50px;
+    width: 150px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    color: black;
+    background: #f1f1f1;
+    outline: none;
+    padding: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    &>p{
+        height: 100%;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        flex: 1;
+    }
+}
+.nextBtnHovered > :first-child{
+    border-radius: 6px 0 0 6px;
+}
+.nextBtnHovered > :last-child{
+    border-radius: 0 6px 6px 0;
+}
+
+.startedTimerDiv{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ff0000;
+    font-size: 10rem;
+}
+.lvlDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
